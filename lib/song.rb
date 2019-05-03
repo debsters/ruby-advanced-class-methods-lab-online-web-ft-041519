@@ -51,8 +51,6 @@ class Song
     song.artist_name = string.split(/\.|\s-\s/)[0]
     song.save
     song
-
-    # song.name.delete_if {|word| word == "mp3"}
   end
 
 end
