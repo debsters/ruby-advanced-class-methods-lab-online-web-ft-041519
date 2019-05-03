@@ -49,7 +49,7 @@ class Song
     song = self.new
     song.name = (string.split(/\.|\s-\s/))
     song.artist_name = (song.name[0])
-
+    song
 
     # song.name.delete_if {|word| word == "mp3"}
   end
