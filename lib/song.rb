@@ -44,7 +44,6 @@ class Song
     self.all.sort {|a,b| a.name <=> b.name }
   end
 
-  def self.new_from_filename(string)
     def self.new_from_filename(string)
     song = string.split(/\.|\s-\s/)
     song.delete_if {|word| word == "mp3"}
