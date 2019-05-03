@@ -47,8 +47,9 @@ class Song
 
   def self.new_from_filename(string)
     song = self.new
-    song.name = (string.split(/\.|\s-\s/))
-    song.artist_name = (song.name[0])
+    song.name = string.split(/\.|\s-\s/)[1]
+    song.artist_name = string.split(/\.|\s-\s/)[0]
+    song.save
     song
 
     # song.name.delete_if {|word| word == "mp3"}
