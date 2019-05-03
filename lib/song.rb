@@ -40,4 +40,8 @@ class Song
     self.find_by_name(string) || self.create_by_name(string)
   end
 
+  def self.alphabetical
+    self.all.sort {|a,b| a.name <=> b.name }
+  end
+
 end
