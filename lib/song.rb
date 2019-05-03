@@ -34,8 +34,8 @@ class Song
   end
 
   def Song.find_or_create_by_name(string)
-    # return a matching song instance with that name 
-    # or 
+    # return a matching song instance with that name
+    # or
     # create a new song with the name and return the song instance.
     self.find_by_name(string) || self.create_by_name(string)
   end
